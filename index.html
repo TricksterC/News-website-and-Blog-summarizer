@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Summarizer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 400px;
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #summary {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 400px;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Website Summarizer</h1>
+    <p>Enter the website URL you want to summarize:</p>
+    <input type="text" id="urlInput" placeholder="Enter URL here">
+    <button onclick="summarizeWebsite()">Summarize</button>
+    <div id="summary"></div>
+
+    <script>
+        function summarizeWebsite() {
+            const url = document.getElementById("urlInput").value;
+
+            // **Placeholder - Replace with actual summarization logic**
+            const summary = "This is a temporary summary. You'll need to implement the logic to fetch and summarize the website content.";
+
+            document.getElementById("summary").textContent = summary;
+        }
+    </script>
+</body>
+</html>
